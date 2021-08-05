@@ -3,7 +3,7 @@ Tic tac toe is a very popular tiny game which is build by react - in this projec
 
 ## Take a look
 
-__``Play Live?  ``__  [__click here__]()
+### __Wanna Play Live?__  [__click here__](https://tictactoebyreact.netlify.app)
 
 <br>
 

@@ -1,0 +1,128 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.game {
+  height: 100vh;
+  background: linear-gradient(
+    320deg,
+    rgba(26, 188, 156, 1) 29%,
+    rgba(22, 160, 133, 1) 100%
+  );
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.heading {
+  text-decoration: underline;
+  margin-top: -60px;
+  color: #2c3e50;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+
+
+  &__info {
+    text-align: center;
+  }
+
+  &__name {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #1abc9c;
+    outline: none;
+    border-radius: 15px;
+    font-size: 25px;
+    padding-left: 10px;
+    font-weight: 700;
+    margin: 0 20px;
+  }
+}
+
+.active {
+  color: #e67e22;
+  border: 5px solid #e67e22;
+
+  // & + icon--player {
+  //   color: red;
+  // }
+}
+
+.restart {
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #e67e22;
+  font-size: 20px;
+  margin-top: -70px;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+  display: inline-block;
+
+  &:hover {
+    transform: scale(1.05)
+  }
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 5px;
+  row-gap: 5px;
+}
+
+.square {
+  height: 100px;
+  width: 100px;
+  border: none;
+  transition: all 0.5s;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: rgb(129, 126, 126);
+  }
+}
+
+.icon {
+  font-size: 50px;
+
+  &--player {
+    display: block;
+    margin: 5px auto;
+  }
+}
+
+.drawn {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: -60px;
+  font-size: 40px;
+}
+
+.footer {
+  // flex-grow: 1;
+  margin-top: auto 0;
+}
+
+.winner-name {
+  font-size: 40px;
+  color: #fff;
+}

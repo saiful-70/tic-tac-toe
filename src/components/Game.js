@@ -114,7 +114,7 @@ const Game = () => {
       <ButtonReset handleReset={handleReset} />
 
       <footer className="footer">
-        Created by &copy; Saiful Islam. {new Date().getFullYear()}
+        Created by &copy; <a href="https://github.com/saiful-70" style={{color: "white", borderBottom: "1px solid #fff", textDecoration: "none"}}>Saiful Islam</a> , {new Date().getFullYear()}
       </footer>
     </div>
   );

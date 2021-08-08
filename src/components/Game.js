@@ -29,10 +29,10 @@ const Game = () => {
   if (winner === "X") {
     console.log(winner);
     score["player1"]++;
-    localStorage.setItem("player1", Math.ceil(score["player1"] / 2)); // Don't know why score is set to double
+    localStorage.setItem("player1", Math.ceil(score["player1"]));
   } else if (winner === "O") {
     score["player2"]++;
-    localStorage.setItem("player2", Math.ceil(score["player2"] / 2)); // Don't know why score is set to double
+    localStorage.setItem("player2", Math.ceil(score["player2"]));
   }
 
   // restart button
